@@ -48,7 +48,7 @@ header h1 {
 
 .pricing-card {
     background-color: #fff; /* remove background color */
-    border: 3px solid var(--highlight); /* outline uses highlight color */
+    border: 3px solid var(--base-dark); /* outline uses highlight color */
     border-radius: 12px;
     padding: 30px;
     flex: 1 1 250px;
@@ -85,7 +85,7 @@ header h1 {
 
 .pricing-card ul li {
     padding: 10px 0;
-    border-bottom: 1px solid var(--base-gray);
+    border-bottom: 1px solid var(--base-dark);
     color: var(--base-dark);
 }
 
