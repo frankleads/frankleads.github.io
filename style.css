@@ -1,0 +1,56 @@
+/* Global Styles */
+body {
+    background-color: #FAF9F6; /* Antique white */
+    color: #000;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: #e9f2ec; /* soft green tint */
+    border-bottom: 2px solid #d0e2d6;
+}
+
+/* Package Cards */
+.package-card {
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.package-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Highlighted Package */
+.package-card.highlight {
+    border: 2px solid #2f5d50;
+    background-color: #f4fbf7;
+}
+
+/* Buttons */
+.btn-success {
+    background-color: #2f5d50;
+    border-color: #2f5d50;
+}
+
+.btn-success:hover {
+    background-color: #264b40;
+    border-color: #264b40;
+}
+
+.btn-outline-success {
+    color: #2f5d50;
+    border-color: #2f5d50;
+}
+
+.btn-outline-success:hover {
+    background-color: #2f5d50;
+    color: #fff;
+}
+
+/* Footer */
+footer {
+    border-top: 2px solid #1a1a1a;
+}
