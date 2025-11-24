@@ -3,8 +3,8 @@
     --base-dark: #190933;      /* primary background / text base */
     --base-gray: #665687;      /* secondary text, borders */
     --highlight: #B084CC;      /* accent color for buttons, hover, etc */
-    --option-light: #5DD9C1;   /* pricing option background / highlight */
-    --option-light-alt: #ACFCD9; /* secondary option / hover / subtle background */
+    --option-light: #5DD9C1;   /* pricing option outline */
+    --option-light-alt: #ACFCD9; /* alternate pricing outline */
 }
 
 body {
@@ -29,6 +29,11 @@ a:hover {
     color: var(--base-gray);
 }
 
+/* Hero Section */
+header h1 {
+    color: var(--highlight); /* ensure company name is visible */
+}
+
 /* Pricing Section */
 .pricing-section {
     padding: 60px 20px;
@@ -44,13 +49,21 @@ a:hover {
 }
 
 .pricing-card {
-    background-color: var(--option-light);
+    background-color: #fff; /* remove background color */
+    border: 3px solid var(--option-light); /* use outline for color */
     border-radius: 12px;
     padding: 30px;
     flex: 1 1 250px;
     max-width: 300px;
     box-shadow: 0 6px 18px rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* ensures button stays bottom */
     transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.pricing-card:nth-child(2) {
+    border-color: var(--option-light-alt); /* alternate outline for second card */
 }
 
 .pricing-card:hover {
@@ -78,11 +91,12 @@ a:hover {
 
 .pricing-card ul li {
     padding: 10px 0;
-    border-bottom: 1px solid var(--option-light-alt);
+    border-bottom: 1px solid var(--base-gray);
     color: var(--base-dark);
 }
 
 .pricing-card button {
+    align-self: center; /* center button horizontally */
     margin-top: 20px;
     padding: 12px 25px;
     border: none;
@@ -96,4 +110,15 @@ a:hover {
 
 .pricing-card button:hover {
     background-color: var(--base-gray);
+}
+
+/* Services Section cards outline adjustment */
+section .row > div > div {
+    background-color: #fff; /* remove background fill */
+    border: 2px solid var(--option-light);
+    padding: 20px;
+    border-radius: 12px;
+}
+section .row > div:nth-child(2) > div {
+    border-color: var(--option-light-alt);
 }
