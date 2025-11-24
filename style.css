@@ -2,9 +2,7 @@
 :root {
     --base-dark: #190933;      /* primary background / text base */
     --base-gray: #665687;      /* secondary text, borders */
-    --highlight: #B084CC;      /* accent color for buttons, hover, etc */
-    --option-light: #5DD9C1;   /* pricing option outline */
-    --option-light-alt: #ACFCD9; /* alternate pricing outline */
+    --highlight: #B084CC;      /* accent color for borders, buttons, highlights */
 }
 
 body {
@@ -31,7 +29,7 @@ a:hover {
 
 /* Hero Section */
 header h1 {
-    color: var(--highlight); /* ensure company name is visible */
+    color: var(--highlight); /* company name visible */
 }
 
 /* Pricing Section */
@@ -50,7 +48,7 @@ header h1 {
 
 .pricing-card {
     background-color: #fff; /* remove background color */
-    border: 3px solid var(--option-light); /* use outline for color */
+    border: 3px solid var(--highlight); /* outline uses highlight color */
     border-radius: 12px;
     padding: 30px;
     flex: 1 1 250px;
@@ -58,12 +56,8 @@ header h1 {
     box-shadow: 0 6px 18px rgba(0,0,0,0.1);
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* ensures button stays bottom */
+    justify-content: space-between;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.pricing-card:nth-child(2) {
-    border-color: var(--option-light-alt); /* alternate outline for second card */
 }
 
 .pricing-card:hover {
@@ -115,10 +109,7 @@ header h1 {
 /* Services Section cards outline adjustment */
 section .row > div > div {
     background-color: #fff; /* remove background fill */
-    border: 2px solid var(--option-light);
+    border: 2px solid var(--highlight);
     padding: 20px;
     border-radius: 12px;
-}
-section .row > div:nth-child(2) > div {
-    border-color: var(--option-light-alt);
 }
