@@ -96,7 +96,7 @@ body {
 .form-card {
     margin: 30px auto;
     background: white;
-    padding: 40px;
+    /* padding: 40px; */
     /* border: 1px solid var(--light-gray); */
     border-radius: 8px;
     width: min(600px, 100%);
